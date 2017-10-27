@@ -1,0 +1,9 @@
+# {{ ansible_managed }}
+
+{% for directive in shiny_server_conf_directives %}
+{% if directive.find('\n') != -1 %}
+{{ directive }}
+{% else %}
+{% if directive != '' %}{{ directive.replace(';', ';\n  ').replace(' {', ' {\n  ').replace(' }', ' \n}\n') }}{% if directive.find('{') == -1 %};
+{% endif %}{% endif %}{% endif %}
+{% endfor %}

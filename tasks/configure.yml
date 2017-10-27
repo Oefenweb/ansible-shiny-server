@@ -1,0 +1,12 @@
+# tasks file for shiny-server
+---
+- name: configure | update (server) configuration file
+  template:
+    src: etc/shiny-server/shiny-server.conf.j2
+    dest: /etc/shiny-server/shiny-server.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart shiny-server
+  tags:
+    - shiny-server-configure-server

@@ -1,6 +1,7 @@
 # meta file for shiny-server
 ---
 galaxy_info:
+  role_name: shiny-server
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up (the latest version of) Shiny Server in Debian-like systems

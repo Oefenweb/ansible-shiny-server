@@ -1,7 +1,7 @@
 ## shiny-server
 
 [![Build Status](https://travis-ci.org/Oefenweb/ansible-shiny-server.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-shiny-server)
-![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-shiny--server-blue.svg)](https://galaxy.ansible.com/Oefenweb/shiny-server/)
+![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-shiny--server-blue.svg)](https://galaxy.ansible.com/Oefenweb/shiny_server/)
 
 Set up (the latest version of) [Shiny Server](https://www.rstudio.com/products/shiny/shiny-server/) in Debian-like systems.
 

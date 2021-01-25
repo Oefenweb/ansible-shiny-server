@@ -2,15 +2,15 @@
 ---
 - include: install.yml
   tags:
-   - configuration
-   - shiny-server
-   - shiny-server-install
+    - configuration
+    - shiny-server
+    - shiny-server-install
 
 - include: configure.yml
   tags:
-   - configuration
-   - shiny-server
-   - shiny-server-configure
+    - configuration
+    - shiny-server
+    - shiny-server-configure
 
 - name: start and enable service
   service:

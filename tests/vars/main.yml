@@ -1,0 +1,4 @@
+# vars file for shiny-server
+---
+shiny_server_install:
+  - r-base

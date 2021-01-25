@@ -1,2 +1,2 @@
-skip_list:
-  - '303'
+warn_list:
+  - '106'

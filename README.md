@@ -13,7 +13,7 @@ Set up (the latest version of) [Shiny Server](https://www.rstudio.com/products/s
 
 #### Variables
 
-* `shiny_server_version`: [default: `1.5.5.872`]: Version to install
+* `shiny_server_version`: [default: `1.5.16.958`]: Version to install
 * `shiny_server_install`: [default: `[]`]: Additional packages to install (e.g. `r-base`)
 
 * `shiny_server_conf_directives`: [default: see `defaults/main.yml`]: Configuration directives ([see](http://docs.rstudio.com/shiny-server/#default-configuration))

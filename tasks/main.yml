@@ -1,4 +1,4 @@
-# tasks file for shiny-server
+# tasks file
 ---
 - include: install.yml
   tags:

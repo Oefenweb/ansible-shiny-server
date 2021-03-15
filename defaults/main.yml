@@ -1,4 +1,4 @@
-# defaults file for shiny-server
+# defaults file
 ---
 shiny_server_version: 1.5.16.958
 shiny_server_install: []

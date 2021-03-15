@@ -1,4 +1,4 @@
-# tasks file for shiny-server
+# tasks file
 ---
 - name: configure | update (server) configuration file
   template:

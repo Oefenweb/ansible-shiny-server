@@ -1,4 +1,4 @@
-# handlers file for shiny-server
+# handlers file
 ---
 - name: restart shiny-server
   service:

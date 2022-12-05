@@ -27,14 +27,13 @@
     - shiny-server-install-download
     - shiny-server-install-download-directory
 
-- name: install | download deb
+- name: install | download deb  # noqa command-instead-of-module
   command: >
     curl -sSL
     https://download3.rstudio.org/ubuntu-14.04/{{ ansible_machine }}/shiny-server-{{ shiny_server_version }}-{{ shiny_server_machine_map[ansible_machine] }}.deb
     -o {{ shiny_server_downloads_path }}/shiny-server_{{ shiny_server_version }}_{{ shiny_server_machine_map[ansible_machine] }}.deb
   args:
     creates: "{{ shiny_server_downloads_path }}/shiny-server_{{ shiny_server_version }}_{{ shiny_server_machine_map[ansible_machine] }}.deb"
-    warn: false
   tags:
     - shiny-server-install-download
     - shiny-server-install-download-deb

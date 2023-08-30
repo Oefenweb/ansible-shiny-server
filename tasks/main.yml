@@ -1,19 +1,21 @@
 # tasks file
 ---
-- include: install.yml
+- name: install
+  ansible.builtin.import_tasks: install.yml
   tags:
     - configuration
     - shiny-server
     - shiny-server-install
 
-- include: configure.yml
+- name: configure
+  ansible.builtin.import_tasks: configure.yml
   tags:
     - configuration
     - shiny-server
     - shiny-server-configure
 
 - name: start and enable service
-  service:
+  ansible.builtin.service:
     name: shiny-server
     state: "{{ service_default_state | default('started') }}"
     enabled: "{{ service_default_enabled | default(true) | bool }}"

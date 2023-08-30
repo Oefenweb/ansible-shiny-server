@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: configure | update (server) configuration file
-  template:
+  ansible.builtin.template:
     src: etc/shiny-server/shiny-server.conf.j2
     dest: /etc/shiny-server/shiny-server.conf
     owner: root

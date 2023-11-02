@@ -34,7 +34,7 @@ None
 ---
 - hosts: all
   roles:
-    - shiny-server
+    - oefenweb.shiny-server
   vars:
     shiny_server_conf_directives:
       - |

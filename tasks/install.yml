@@ -30,7 +30,7 @@
 - name: install | download deb  # noqa command-instead-of-module
   ansible.builtin.command: >
     curl -sSL
-    https://download3.rstudio.org/ubuntu-14.04/{{ ansible_facts['machine'] }}/shiny-server-{{ shiny_server_version }}-{{ shiny_server_machine_map[ansible_facts['machine']] }}.deb
+    https://download3.rstudio.org/ubuntu-20.04/{{ ansible_facts['machine'] }}/shiny-server-{{ shiny_server_version }}-{{ shiny_server_machine_map[ansible_facts['machine']] }}.deb
     -o {{ shiny_server_downloads_path }}/shiny-server_{{ shiny_server_version }}_{{ shiny_server_machine_map[ansible_facts['machine']] }}.deb
   args:
     creates: "{{ shiny_server_downloads_path }}/shiny-server_{{ shiny_server_version }}_{{ shiny_server_machine_map[ansible_facts['machine']] }}.deb"

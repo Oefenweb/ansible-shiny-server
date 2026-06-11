@@ -6,7 +6,7 @@
     dest: /etc/shiny-server/shiny-server.conf
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
   notify: restart shiny-server
   tags:
     - shiny-server-configure-server
